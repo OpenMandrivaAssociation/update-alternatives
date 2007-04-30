@@ -1,6 +1,6 @@
 Name:		update-alternatives
 Version:	1.8.5
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Alternative management system
 License:	GPL
 Group:		System/Configuration/Packaging
@@ -9,6 +9,8 @@ Buildarch:	noarch
 Url:        http://cvs.mandriva.com/cgi-bin/cvsweb.cgi/soft/update-alternatives/
 Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 Conflicts:  rpm < 4.4.1
+# explicit file provides
+Provides:	/usr/sbin/update-alternatives
 
 %description
 Utility for managing concurent software. Original version comes from
