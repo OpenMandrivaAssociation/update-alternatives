@@ -1,6 +1,6 @@
 Name:		update-alternatives
-Version:	1.8.5
-Release:	%mkrel 2
+Version:	1.8.6
+Release:	%mkrel 1
 Summary:	Alternative management system
 License:	GPL
 Group:		System/Configuration/Packaging
