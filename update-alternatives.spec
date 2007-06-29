@@ -1,5 +1,5 @@
 Name:		update-alternatives
-Version:	1.8.7
+Version:	1.8.8
 Release:	%mkrel 1
 Summary:	Alternative management system
 License:	GPL
