@@ -6,7 +6,7 @@ License:	GPL
 Group:		System/Configuration/Packaging
 Source0:	%{name}-%{version}.tar.bz2
 Buildarch:	noarch
-Url:        http://cvs.mandriva.com/cgi-bin/cvsweb.cgi/soft/update-alternatives/
+Url:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/update-alternatives/  
 Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 Conflicts:  rpm < 4.4.1
 # explicit file provides
