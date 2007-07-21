@@ -1,12 +1,12 @@
 Name:           update-alternatives
 Version:        1.8.9
-Release:        %mkrel 3
+Release:        %mkrel 4
 Summary:        Alternative management system
 License:        GPL
 Group:          System/Configuration/Packaging
 URL:            http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/update-alternatives/  
 Source0:        %{name}-%{version}.tar.bz2
-Patch0:         %{name}-1.8.9-set.patch
+Patch0:         %{name}-1.8.9-remove_all-list-set-all.patch
 Buildarch:      noarch
 Conflicts:  rpm < 4.4.1
 # explicit file provides
