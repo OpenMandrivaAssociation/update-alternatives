@@ -1,17 +1,18 @@
-Name:		update-alternatives
-Version:	1.8.9
-Release:	%mkrel 2
-Summary:	Alternative management system
-License:	GPL
-Group:		System/Configuration/Packaging
-Source0:	%{name}-%{version}.tar.bz2
-Buildarch:	noarch
-Url:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/update-alternatives/  
+Name:           update-alternatives
+Version:        1.8.9
+Release:        %mkrel 3
+Summary:        Alternative management system
+License:        GPL
+Group:          System/Configuration/Packaging
+URL:            http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/update-alternatives/  
+Source0:        %{name}-%{version}.tar.bz2
+Patch0:         %{name}-1.8.9-set.patch
+Buildarch:      noarch
 Conflicts:  rpm < 4.4.1
 # explicit file provides
-Provides:	%{_sbindir}/alternatives
-Provides:	%{_sbindir}/update-alternatives
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
+Provides:       %{_sbindir}/alternatives
+Provides:       %{_sbindir}/update-alternatives
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 Utility for managing concurent software. Original version comes from
@@ -19,6 +20,7 @@ Debian but has been patched by Mandriva for use with rpm systems.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 
