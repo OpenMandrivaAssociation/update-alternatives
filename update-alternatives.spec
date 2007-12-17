@@ -11,7 +11,6 @@ Conflicts:  rpm < 4.4.1
 # explicit file provides
 Provides:       %{_sbindir}/alternatives
 Provides:       %{_sbindir}/update-alternatives
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 Utility for managing concurent software. Original version comes from
