@@ -28,9 +28,9 @@ Debian but has been patched by Mandriva for use with rpm systems.
 %{makeinstall}
 
 %{__mkdir_p} %{buildroot}%{_sysconfdir}/alternatives
-%{__mkdir_p} %{buildroot}%{_localstatedir}/rpm/alternatives
+%{__mkdir_p} %{buildroot}%{_localstatedir}/lib/rpm/alternatives
 
-(cd %{buildroot}%{_localstatedir} && %{__ln_s} rpm/alternatives alternatives)
+(cd %{buildroot}%{_localstatedir}/lib && %{__ln_s} rpm/alternatives alternatives)
 (cd %{buildroot}%{_sbindir} && %{__ln_s} update-alternatives alternatives)
 
 %clean
@@ -41,6 +41,6 @@ Debian but has been patched by Mandriva for use with rpm systems.
 %attr(0755,root,root) %{_sbindir}/alternatives
 %attr(0755,root,root) %{_sbindir}/update-alternatives
 %{_mandir}/man8/update-alternatives.8*
-%dir %{_localstatedir}/alternatives
-%dir %{_localstatedir}/rpm/alternatives
+%dir %{_localstatedir}/lib/alternatives
+%dir %{_localstatedir}/lib/rpm/alternatives
 %dir %{_sysconfdir}/alternatives
