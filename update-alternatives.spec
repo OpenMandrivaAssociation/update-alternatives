@@ -1,6 +1,6 @@
 Name:           update-alternatives
 Version:        1.9.0
-Release:        %mkrel 7
+Release:        %mkrel 8
 Summary:        Alternative management system
 License:        GPL
 Group:          System/Configuration/Packaging
