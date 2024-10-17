@@ -4,7 +4,7 @@ Release:	10
 Summary:	Alternative management system
 License:	GPL
 Group:		System/Configuration/Packaging
-URL:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/update-alternatives/
+URL:		https://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/update-alternatives/
 Source0:	%{name}-%{version}.tar.bz2
 Buildarch:	noarch
 Conflicts:	rpm < 4.4.1
